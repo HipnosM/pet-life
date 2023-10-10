@@ -48,6 +48,12 @@ h2 {
    margin-bottom: 32px;
 }
 
+.botoes {
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 .botao {
    background-color: #FF725E;
    border-radius: 8px;
