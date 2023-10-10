@@ -24,7 +24,7 @@ header a {
    color: #FFFFFF;
    text-decoration: none;
    font-weight: 600;
-   padding: 32px;
+   padding: 0 32px;
 }
 
 /* estilo do conteúdo principal */
@@ -68,7 +68,7 @@ h2 {
    bottom: 0;
    left: 0;
    width: 100%;
-   z-index: -1;
+   z-index: -10;
 }
 
 /* estilo das demais seções da página */
@@ -99,6 +99,13 @@ h2 {
    margin: 0 auto;
 }
 
+#duvidas {
+   display: flex;
+   align-items: start;
+   gap: 64px;
+   padding: 64px 80px;
+}
+
 .duvida {
    position: relative;
 }
@@ -107,6 +114,7 @@ h2 {
    border: 2px solid #FF725E;
    border-radius: 8px;
    cursor: pointer;
+   display: block;
    padding: 24px;
 }
 
@@ -153,21 +161,23 @@ footer .titulo {
    margin-bottom: 24px;
 }
 
-footer nav a {
+footer a,
+footer p {
    color: #263138;
    display: block;
    margin-bottom: 16px;
    text-decoration: none;
-}
-
-footer p {
-   margin-bottom: 16px;
    max-width: 350px;
 }
 
-footer p a {
-   color: #263138;
-   text-decoration: none;
+footer .col-1 {
+   flex: 2;
+}
+footer .col-2 {
+   flex: 1;
+}
+footer .col-3 {
+   flex: 2;
 }
 
 #copyright {
