@@ -13,7 +13,7 @@ body {
 
 /* estilização do cabeçalho (header) */
 header {
-   background-color: #FF946C;
+   background-color: #FF946C; 
    padding: 24px 80px;
    display: flex;
    align-items: center;
@@ -27,12 +27,16 @@ header a {
    padding: 0 32px;
 }
 
+img {
+   max-width: 100%;
+}
+
 /* estilo do conteúdo principal */
 #inicio {
    display: flex;
    align-items: center;
    gap: 32px;
-   padding: 24px 80px 128px 80px;
+   padding: 24px 40px 128px 40px;
    position: relative;
 }
 
@@ -48,30 +52,27 @@ h2 {
    margin-bottom: 32px;
 }
 
-.botoes {
-   display: inline-flex;
-   flex-direction: column;
-   align-items: center;
-}
-
 .botao {
+   display: flex;
+   justify-content: center;
    background-color: #FF725E;
    border-radius: 8px;
-   padding: 16px 32px;
-   color: #FFFFFF;
+   padding: 14px 20px;
+   color: #FFF;
    text-decoration: none;
-}
-
-.botao-transp {
+   width: 250px;
+ }
+ .botao.transp {
    background-color: transparent;
+   text-decoration: underline;
    color: #FF725E;
-   padding: 16px 32px;
    text-underline-offset: 4px;
-}
+   margin-bottom: 12px;
+ }
 
 .absolute {
    position: absolute;
-   bottom: 0;
+   bottom: 100px;
    left: 0;
    width: 100%;
    z-index: -10;
@@ -127,7 +128,7 @@ h2 {
 .duvida img {
    position: absolute;
    top: 32px;
-   right: 24px;
+   right: 10px;
 }
 
 .duvida .par {
@@ -176,14 +177,12 @@ footer p {
    max-width: 350px;
 }
 
-footer .col-1 {
+footer .col-1,
+footer .col-3 {
    flex: 2;
 }
 footer .col-2 {
    flex: 1;
-}
-footer .col-3 {
-   flex: 2;
 }
 
 #copyright {

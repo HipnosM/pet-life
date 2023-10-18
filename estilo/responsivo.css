@@ -1,0 +1,36 @@
+@media (max-width: 840px) {
+    header,
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 16px 0px 0px 0px;
+    }
+    img {
+      max-width: 100%;
+    }
+    #inicio,
+    #clinica,
+    #farmacia,
+    #duvidas {
+      flex-direction: column;
+      padding: 0px 10px;
+      margin: 0;
+      align-items: center;
+      text-align: inherit;
+    }
+    .absolute {
+      display: none !important;
+    }
+    .botao {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding: 16px 0px;
+      margin: 0 auto;
+      width: 250px;
+    }
+    
+    footer {
+      display: block;
+    }
+  }
