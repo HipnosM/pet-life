@@ -11,6 +11,10 @@ body {
    color: #263138;
 }
 
+img {
+   max-width: 100%;
+}
+
 /* estilização do cabeçalho (header) */
 header {
    background-color: #FF946C;
